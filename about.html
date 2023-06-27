@@ -11,19 +11,38 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/wdsfav.jpg">
     <meta name="viewport" content="width=device-width,intial-scale=1">
+    <script src="scripts/script.js"></script>
 
 </head>
     
 <body>
+    <!-- Mobile Navigational Menu -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trivia.html">Trivia Fun</a>
+            <a href="animalsounds.html">Animal Sounds</a>
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776</div>
+        </a>
+    </nav>
+
     <!-- Contains logo and Website name -->
-    <header>
+    <header ="wds-logo">
         <div class="logo">
             <img src="images/wdslogo.png" alt="Picture of Eric">
             <h3>"Providing a variety of games to keep you entertained!"</h3>
         </div>
     </header>
-    <!-- Contains links for other webpages on site -->
-    <nav>
+
+    <!-- Desktop/Tablet Navigational Menu -->
+    <nav class="desktop-tablet">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -33,7 +52,7 @@
         </ul>
     </nav>
 
- 
+
     <!-- Main Content of website -->
     <main>
         <div id="container">
@@ -85,37 +104,38 @@
 
                 <div id="games-table">
 
-                <table> <!-- Start of Table -->
-                    <caption>Games Of The Future</caption>
-                    <tr>
-                        <th>Release Date</th>
-                        <th> Game Name</th>
-                        <th>Game Genre</th>
-                        <th>Description</th >
-                    </tr>
-                    
-                    <tr>
-                        <td>08/21/2023</td>
-                        <td>Dragons Allied</td>
-                        <td>Fantasy</td>
-                        <td>Tale of a mystical land with dragons controlled by the user.</td>
-                    </tr>
+                    <table>
+                        <!-- Start of Table -->
+                        <caption>Games Of The Future</caption>
+                        <tr>
+                            <th>Release Date</th>
+                            <th> Game Name</th>
+                            <th>Game Genre</th>
+                            <th>Description</th>
+                        </tr>
 
-                    <tr>
-                        <td>01/01/2024</td>
-                        <td>Shape Dropsical</td>
-                        <td>Puzzles</td>
-                        <td>Guide Random shapes in a tetris playstyle to keep board game free.</td>
-                    </tr>
+                        <tr>
+                            <td>08/21/2023</td>
+                            <td>Dragons Allied</td>
+                            <td>Fantasy</td>
+                            <td>Tale of a mystical land with dragons controlled by the user.</td>
+                        </tr>
 
-                    <tr>
-                        <td>04/01/2024</td>
-                        <td>Noise Guesser</td>
-                        <td>Entertainment</td>
-                        <td>Decipher the noises you hear, and match them with their pictures.</td>
-                    </tr>
+                        <tr>
+                            <td>01/01/2024</td>
+                            <td>Shape Dropsical</td>
+                            <td>Puzzles</td>
+                            <td>Guide Random shapes in a tetris playstyle to keep board game free.</td>
+                        </tr>
 
-                </table>
+                        <tr>
+                            <td>04/01/2024</td>
+                            <td>Noise Guesser</td>
+                            <td>Entertainment</td>
+                            <td>Decipher the noises you hear, and match them with their pictures.</td>
+                        </tr>
+
+                    </table>
 
                 </div>
 
@@ -139,7 +159,7 @@
 
         </div>
 
- 
+
     </main>
 
     <!-- Contains Contact information and copy right -->

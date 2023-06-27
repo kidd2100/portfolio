@@ -34,8 +34,7 @@ img {
 
     /*Style rules for header*/
     header {
-        position: -webkit-sticky;
-        position: sticky;
+ 
         font-size: .75em;
         text-align: center;
         padding: 0 0 0 0;    
@@ -48,39 +47,33 @@ img {
     text-shadow: 5px 10px 4px #fff;
 }
 
-    /*Style rules for navigational*/
-    nav {
-        background-color: transparent;
-        opacity: .8;
-    }
-
-        nav ul {
-            /* Removes bullets*/
-            list-style-type: none;
-            margin: 0;
-            text-align: right;
-        }
-
-        nav li {
-            font-size: 1.25em;
-            border-top: 1px solid #fff;
-            border-radius: 20px;
-            background-color: #000;
-            
-        }
-
-        nav li:first-child {
-            border-top: none;
-        }
-
-    nav li a {
-        display: block;
-        color: white;
+    /* Style rules for Hamburger Menu */
+    .mobile-nav a {
+        color: #fff;
+        font-family: 'Francois One', sans-serif;
         text-align: center;
+        font-size: 1.5em;
         text-decoration: none;
-        padding: .25em .75em;
-        
+        padding: 1%;
+        display: block;
+        background-color: black;
+        border: 1px solid #fff;
+        border-radius: 10px;
     }
+
+    .mobile-nav a.menu-icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+        font-size: 2em;
+
+    }
+
+ 
 
 aside a {
     text-decoration: none;
@@ -106,7 +99,7 @@ aside a {
         display: block;
     }
 
-    .desktop-tablet {
+    .desktop-tablet, #menu-links {
         display: none;
     }
 
@@ -187,7 +180,7 @@ aside a {
 
     fieldset legend {
         font-weight: bold;
-        font-size: 1.15;
+        font-size: 1.15em;
     }
 
     label {
@@ -219,7 +212,7 @@ aside a {
 
 /* Media Query for Tablet Viewport */
 @media screen and  (min-width: 630px){
-    .mobile {
+    .mobile, .mobile-nav {
        display: none;
     }
 
@@ -238,15 +231,30 @@ aside a {
         place-items: center;
         background-color: transparent;
         margin: 1em 0 2em 0;
+        opacity: .8;
     }
+
+
+     nav ul {
+        /* Removes bullets*/
+         list-style-type: none;
+         margin: 0;
+         text-align: center;
+     }
+
     nav li {
         display: inline-block;
         border: none;
+        font-size: 1.25em;
+        font-family: 'Francois One', sans-serif;
     }
 
-    nav li a {
-        padding: .1em .75em;
-    }
+        nav li a {
+            padding: .1em .75em;
+            display: block;
+            color: white;
+            text-decoration: none;
+        }
 
     /* Tablet Viewport: Style Rules for Main */
     main {

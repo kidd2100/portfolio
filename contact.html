@@ -11,19 +11,38 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/wdsfav.jpg">
     <meta name="viewport" content="width=device-width,intial-scale=1">
+    <script src="scripts/script.js"></script>
 
 </head>
     
 <body>
+    <!-- Mobile Navigational Menu -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trivia.html">Trivia Fun</a>
+            <a href="animalsounds.html">Animal Sounds</a>
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776</div>
+        </a>
+    </nav>
+
     <!-- Contains logo and Website name -->
-    <header>
+    <header id="wds-logo">
         <div class="logo">
             <img src="images/wdslogo.png" alt="Picture of Eric">
             <h3>"Providing a variety of games to keep you entertained!"</h3>
         </div>
     </header>
-    <!-- Contains links for other webpages on site -->
-    <nav>
+
+    <!-- Desktop/Tablet Navigational Menu -->
+    <nav class="desktop-tablet">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -33,7 +52,7 @@
         </ul>
     </nav>
 
- 
+
     <!-- Main Content of website -->
     <main>
         <div id="hero" class="desktop-tablet">
@@ -51,9 +70,10 @@
 
             <h2>Offer your feed back below!!</h2>
 
-            <form class="form-grid"><!-- Start of Form!!!! -->
+            <form class="form-grid">
+                <!-- Start of Form!!!! -->
                 <fieldset>
-                
+
                     <legend>Contact Information</legend>
                     <label for="fName">First Name:</label>
                     <input type="text" name="fName" id="fName" required>
@@ -63,13 +83,13 @@
 
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" required>
-                
+
                 </fieldset>
 
                 <fieldset>
-                    
+
                     <legend>Feedback</legend>
-                    <textarea id="feedback" name="feedback" rows="10" cols="30" required></textarea> 
+                    <textarea id="feedback" name="feedback" rows="10" cols="30" required></textarea>
 
                 </fieldset>
 
